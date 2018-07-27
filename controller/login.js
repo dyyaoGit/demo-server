@@ -2,6 +2,7 @@ const {Router} = require("express");
 const router = Router();
 const user = require('../database/user')
 
+
 router.post('/login', (req, res) => {
     let {password, email} = req.body;
 
